@@ -27,7 +27,15 @@ class highwayNet(nn.Module):
         self.out_length = args['out_length']
         self.grid_size = args['grid_size']
         self.input_embedding_size = args['input_embedding_size']
-
+        """
+        args['encoder_size'] = 64 # lstm encoder hidden state size, adjustable
+        args['decoder_size'] = 128 # lstm decoder  hidden state size, adjustable
+        args['in_length'] = 16
+        args['out_length'] = 20
+        args['grid_size'] = (265,3) # (660/5 *2 +1 )*3
+        args['input_embedding_size'] = 32 # input dimension for lstm encoder, adjustable
+        args['train_flag'] = True
+        """
 
         ## Define network weights
 
